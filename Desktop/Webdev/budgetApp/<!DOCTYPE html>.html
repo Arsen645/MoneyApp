@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transactions</title>
+    <link rel="stylesheet" href="budgetApp.css" type="text/css">
+</head>
+<body>
+
+<div class="layout">
+
+
+  <div class="sideBar">
+    <div class="brand">
+      <div class="brand-icon">🏛</div>
+      <div>
+        <h2>Bank</h2>
+        <span class="muted small">Демо-аккаунт</span>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a href="#" class="menu-link">Главная</a>
+      <a href="#" class="menu-link active">Переводы</a>
+      <a href="#" class="menu-link">Платежи</a>
+      <a href="#" class="menu-link">Счета</a>
+      <a href="#" class="menu-link">Поддержка</a>
+    </nav>
+
+    <button class="btn-primary add-btn">Новый перевод</button>
+</div>
+
+  <!-- Main -->
+  <main class="content">
+
+    <header class="content-header">
+      <h1>Переводы</h1>
+      <button class="btn-light">Профиль</button>
+    </header>
+
+    <section class="search-block">
+      <input type="text" class="input" placeholder="Поиск по получателю или сумме…">
+    </section>
+
+    <section class="filters">
+      <div class="filter-row">
+        <label>Период:</label>
+        <input type="date" class="input small">
+        <span>по</span>
+        <input type="date" class="input small">
+
+        <select class="input small">
+          <option>Все статусы</option>
+          <option>Выполнен</option>
+          <option>В ожидании</option>
+          <option>Отклонён</option>
+        </select>
+
+        <button class="btn-primary small">Применить</button>
+        <button class="btn-light small export">Экспорт CSV</button>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="table-header">
+        <div>Получатель</div>
+        <div>Сумма</div>
+        <div>Дата</div>
+        <div>Статус</div>
+      </div>
+
+      <!-- Row 1 -->
+      <div class="table-row">
+        <div>
+          <strong>Иван Иванов</strong><br>
+          <span class="muted small">Счёт: **** 4321 · Комментарий:</span>
+        </div>
+        <div><strong>₽ 25 000.00</strong></div>
+        <div>18 ноя 2025</div>
+        <div class="status success">Выполнен</div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="table-row">
+        <div>
+          <strong>ООО «Ромашка»</strong><br>
+          <span class="muted small">Счёт: 407 03 123456789 · Платёж</span>
+        </div>
+        <div><strong>₽ 4 500.00</strong></div>
+        <div>19 ноя 2025</div>
+        <div class="status waiting">В ожидании</div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="table-row">
+        <div>
+          <strong>Мария П.</strong><br>
+          <span class="muted small">Счёт: **** 9899 · Ошибка реквизитов</span>
+        </div>
+        <div><strong>₽ 1 200.00</strong></div>
+        <div>17 ноя 2025</div>
+        <div class="status error">Отклонён</div>
+      </div>
+
+      <div class="no-results">Переводов не найдено по заданным критериям.</div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>

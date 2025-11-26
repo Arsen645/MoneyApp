@@ -1,0 +1,189 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eef3f8;
+            width: 90%;
+            margin: auto;
+            margin-top: 2em;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /************************** sidebar *************************/
+        .sideBar {
+            width: 240px;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+            border-radius: 20px;
+            
+
+        }
+
+        .sideBar a {
+            text-decoration: none;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            margin-left: 10px;
+        }
+
+        .menuItem {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            color: #444;
+            text-decoration: none;
+        }
+
+        .menuItem.active {
+            background: #dce7fb;
+            color: #1a73e8;
+        }
+
+        .menuItem:hover {
+            background: #f1f5ff;
+        }
+
+        /* MAIN CONTENT */
+        .main {
+            flex: 2;
+            padding: 30px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .profile {
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .cards {
+            
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+
+        .balance {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #1a73e8;
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+
+    
+
+        .transaction-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .transaction-row:last-child {
+            border-bottom: none;
+        }
+
+
+/************************** quick-actions *************************/
+        .quick-actions {
+            flex: 1;
+            height: 30%;
+            margin-top: 10%;
+        }
+
+        .btn-gray {
+            background: #dce7fb;
+            color: #282828;
+            display: block;
+            margin-bottom: 15px;
+            text-align: center;
+            padding: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+
+
+
+        /************************** transactions *************************/
+.searchBar {
+  padding: 1.4em;
+  padding-right: 0;
+  margin-bottom: 3em; 
+  border-radius: 26px;
+  border: none;
+  font-size: 14px;
+  width: 95%;
+}
+
+.filters {
+    display: flex;
+    gap: 0.7em;
+    margin: 0 0 20px 0;
+}
+
+.filters .input {
+    border-radius: 26px;
+    border: none;
+    
+    padding: 8px;
+    width: 140px;
+    background-origin: white;
+}
+
+.filters .label {
+    
+    
+    padding: 8px;
+    
+}
+
+
+
+
+
+
+
+

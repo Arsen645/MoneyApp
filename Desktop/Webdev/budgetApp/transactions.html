@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="budgetApp.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="sideBar">
+            <div class="logo"> <span>Bank</span></div>
+
+            <a href="index.html">
+            <div class="menuItem ">Home</div></a>
+            <a href="">
+            <div class="menuItem ">Cards</div></a>
+            <a href="">
+            <div class="menuItem">Payments</div></a>
+            <a href="">
+            <div class="menuItem active">Transfers</div></a>
+            <a href="">
+            <div class="menuItem">Support</div></a>
+        </div>
+
+
+        <div class="main">
+            <div class="top-bar">
+                <h1>Transactions</h1>
+                <div class="profile">Profile</div>
+            </div>
+
+            <section class="search-block">
+      <input type="text" class=" searchBar input" placeholder="Search...">
+    </section>
+
+    <div class="filters">
+
+        <label>From:</label>
+        <input type="date" class="input ">
+        <label>to</label>
+        <input type="date" class="input ">
+
+        <select class="input">
+          <option>All</option>
+          <option>Completed</option>
+          <option>Pending</option>
+          <option>Declined</option>
+        </select>
+
+        
+
+        <button class="input">Apply</button>
+      
+    </div>
+            <div class="cards">
+
+                
+                <div class="transactions card">
+                    <h3>Recent transactions</h3>
+
+                    <div class="transaction-row">
+                        <span>Internet Payment</span> <span>$45.00</span>
+                    </div>
+                    <div class="transaction-row">
+                        <span>Salary</span> <span>$1,300.00</span>
+                    </div>
+                    <div class="transaction-row">
+                        <span>Grocery Shopping</span> <span>$120.45</span>
+                    </div>
+                    <div class="transaction-row">
+                        <span>Electricity Bill</span> <span>$85.75</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+        <div class="card quick-actions">
+            <h3>Quick actions</h3>
+            <a class="btn-gray" href="#">income</a>
+            <a class="btn-gray" href="#">expenses</a>
+        </div>
+    </div>
+</body>
+
+</html>
