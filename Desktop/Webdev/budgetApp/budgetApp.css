@@ -134,7 +134,7 @@ body {
             margin-top: 10%;
         }
 
-        .btn-gray {
+        input.btn-gray {
             background: #dce7fb;
             color: #282828;
             display: block;
@@ -143,6 +143,7 @@ body {
             padding: 12px;
             border-radius: 12px;
             text-decoration: none;
+            
         }
 
 

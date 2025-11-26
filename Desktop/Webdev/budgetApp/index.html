@@ -38,26 +38,21 @@
             <div class="cards">
 
                 <div class="balanceCard card">
-                    <div>Account balance</div>
-                    <div class="balance">$5,200.43</div>
-                    <div>Available balance</div>
-                    <a class="btn" href="#">View Details</a>
+                    <h3>Account balance</h3>
+                    <div id="balance"></div><!-- dfddgdg -->
+                    
                 </div>
                 <div class="transactions card">
                     <h3>Recent transactions</h3>
 
-                    <div class="transaction-row">
-                        <span>Internet Payment</span> <span>$45.00</span>
-                    </div>
-                    <div class="transaction-row">
-                        <span>Salary</span> <span>$1,300.00</span>
-                    </div>
-                    <div class="transaction-row">
-                        <span>Grocery Shopping</span> <span>$120.45</span>
-                    </div>
-                    <div class="transaction-row">
-                        <span>Electricity Bill</span> <span>$85.75</span>
-                    </div>
+                    <ul id = 'recentTransactions'>
+
+                    </ul>
+
+                    <!-- <script>
+
+                    </script> -->
+                    
                 </div>
 
 
@@ -70,10 +65,45 @@
         </div>
         <div class="card quick-actions">
             <h3>Quick actions</h3>
-            <a class="btn-gray" href="#">income</a>
-            <a class="btn-gray" href="#">expenses</a>
+            <form id="inp">
+            <input type="radio" name = "prompt" value = "income" class="btn-gray" >income
+            <input type="radio" name = "prompt" value = "expenses" class="btn-gray" >expenses
+            
+            <input type="text" id="textIn" name="sum">
+            </form>
         </div>
     </div>
 </body>
+
+<script>
+    document.getElementById('inp').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        let li = document.createElement('li');
+        let node = document.createTextNode(document.getElementById('textIn').value);
+
+        li.appendChild(node);
+        let element = document.getElementById('recentTransactions');
+        element.appendChild(li);
+        // clacPlus(document.getElementById('textIn').value);
+        document.getElementById('textIn').value = "";
+        
+    })
+
+</script>
+        
+<script>
+    document.getElementById('inp').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        let num1 = parseFloat(document.getElementById('balance').innerHTML);
+        let num2 = parseFloat(document.getElementById('textIn').value);
+        document.getElementById('balance').innerHTML = num1 + num2;
+
+           });
+  
+    
+    
+</script>  
 
 </html>
